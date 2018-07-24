@@ -1,0 +1,51 @@
+	/*margin 的初始化*/
+	body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+		margin:0;
+	}
+	/*paddin 初始化的*/
+	ul,ol,td,th{
+		padding: 0;
+	}
+	/*列表的样式初始化*/
+	ul,li,ol{
+		list-style: none;
+	}
+	/*em 斜体的初始化*/
+	em{
+		font-style: normal;
+	}
+	/*链接样式 下划线清除*/
+	a{
+		text-decoration: none;
+	}
+	/*表单的初始化*/
+	input{
+		margin: 0;	
+		padding: 0;
+		outline: none;
+	}
+	option{
+		padding: 0;
+
+	}
+	textarea{
+		padding: 0;
+		resize: none;
+		outline: none; 
+	}
+	/*BFC 的方法*/
+	.clear:after{
+		/*加一个空的内容 这个字符变成块 属性clear */
+		content: ""; display: block; clear: both;
+	}
+	/* 兼容性*/
+	clear {
+		zoom:1;
+	}
+	/*table 表格边框*/
+	table{
+		border-collapse: collapse;
+	}
+	/*http://yui.yahooapi.com/3.18.1/build/cssresetcssreset-min.css
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+	*/
